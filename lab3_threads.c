@@ -1,16 +1,11 @@
-/** Programa para retornar se um número N é perfeito ou não,
- ** iterando pelos números de 1 a N de com processamento
- ** dividido entre P threads, detectando quais são os fatores
- ** de N
- */
-
-#define MAX_THREADS 4
+#define MAX_THREADS 100
 #define MAX_ARRAY 1000000
 #define true  1
 #define false 0
 #define WINAPI
 #define debugtxt(FORMAT) printf(" TID %d: " #FORMAT "\n",(int) pthread_self())
-#define debug(FORMAT, ARGS...) printf("TID %d: " #FORMAT "\n",(int) pthread_self(),ARGS)
+#define debug(FORMAT, ARGS...) \
+    printf("TID %d: " #FORMAT "\n",(int) pthread_self(),ARGS)
 
 #include <time.h>
 #include <stdio.h>

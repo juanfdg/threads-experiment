@@ -1,6 +1,5 @@
 #include <time.h>
 #include <stdio.h>
-#include <pthread.h>
 
 int main() {
   const int MAXN = 1000000;

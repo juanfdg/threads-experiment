@@ -1,9 +1,3 @@
-/** Programa para retornar se um número N é perfeito ou não,
- ** iterando pelos números de 1 a N de com processamento
- ** dividido entre P threads, detectando quais são os fatores
- ** de N
- */
-
 #define MAX_THREADS 100
 #define MAX_ARRAY 1000000
 #define true  1
@@ -28,7 +22,6 @@ void* WINAPI threadFunc(void * lpparam){
 	while (true) {
 		// Condição de corrida das threads no iterador do array
 		i = iter++;
-		// printf("i = %d\n", i);
 
 		// Precisamos percorrer o array apenas até sua metade
 		if (i > n/2) break;
