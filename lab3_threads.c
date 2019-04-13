@@ -42,7 +42,7 @@ void _down(sem_t *sem, const char * name) {
 	debug("Down %s complete!",name);
 }
 
-unsigned long WINAPI threadFunc(void * lpparam){
+void* WINAPI threadFunc(void * lpparam){
 	int i, aux;
 	while (true) {
 		// Condição de corrida das threads no iterador do array
