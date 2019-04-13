@@ -1,1 +1,5 @@
 bin/
+lab3_sequential
+lab3_threads
+threads.out
+entry.txt
