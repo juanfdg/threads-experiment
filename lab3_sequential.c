@@ -14,12 +14,12 @@ int main() {
   printf("Digite N e o número de threads:\n");
   scanf("%d %d", &n, &p);
  
-  // printf("Array inicial:\n");
+  printf("Array inicial:\n");
   for (int i=0; i<n; i++) {
     fscanf(entry, "%d ", &array[i]);
-  //   printf("%d\n", array[i]);
+    printf("%d\n", array[i]);
   }
-  // printf("\n");
+  printf("\n");
 
   fclose(entry);
 
@@ -29,11 +29,11 @@ int main() {
   }
   clock_t end = clock();
 
-  // printf("Array final:\n");
-  // for (int i=0; i<n; i++) {
-  //   printf("%d\n", array[i]);
-  // }
-  // printf("\n");
+  printf("Array final:\n");
+  for (int i=0; i<n; i++) {
+    printf("%d\n", array[i]);
+  }
+  printf("\n");
 
   printf("Tempo: %g ms\n", 1000*(double)(end-start)/CLOCKS_PER_SEC);
 
